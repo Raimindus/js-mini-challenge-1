@@ -9,7 +9,7 @@ function pizzaMozarella(score){
   return pizzaMozarella ;
 }
 // Test Case
-console.log(pizzaMozarella(15));
+console.log(pizzaMozarella(30));
 // 1
 // 2
 // Pizza
