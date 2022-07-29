@@ -1,21 +1,21 @@
 function scoreChecker(score) {
   if (score >= 90){
-  result = 'A';
+  result = 'Selamat! Anda mendapatkan nilai A.';
   return result;}
     else if (score >= 80){
-      result='B';
+      result='Anda mendapatkan nilai B.';
       return result;
     }
     else if (score >= 70){
-      result ='C';
+      result ='Anda mendapatkan nilai C.';
       return result;
     }
     else if (score >= 60){
-      result = 'D';
+      result = 'Anda mendapatkan nilai D.';
       return result;
     }
     else {
-      result = 'E';
+      result = 'Anda mendapatkan nilai E.';
       return result;
     }
 }
@@ -25,7 +25,7 @@ console.log(scoreChecker(85)); // Anda mendapatkan nilai B.
 console.log(scoreChecker(74)); // Anda mendapatkan nilai C.
 console.log(scoreChecker(60)); // Anda mendapatkan nilai D.
 console.log(scoreChecker(59)); // Anda mendapatkan nilai E.
-
+console.log(scoreChecker(96));// Selamat! Anda mendapatkan nilai A.
 console.log(scoreChecker(15));// Anda mendapatkan nilai E.
 console.log(scoreChecker(30));// Anda mendapatkan nilai E.
 console.log(scoreChecker(45));// Anda mendapatkan nilai E.
