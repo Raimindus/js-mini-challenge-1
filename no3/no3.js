@@ -1,9 +1,15 @@
-function isAnagram(word1, word2) {
-  // Tulis kodingan dibawah ini
-  const result = true;
-  return result;
-}
-
+function isAnagram(stringA, stringB) {
+    stringA = stringA.toLowerCase().replace(/[\W_]+/g, "");
+    stringB = stringB.toLowerCase().replace(/[\W_]+/g, "");
+    const stringASorted = stringA.split("")
+    .sort()
+    .join("");
+    const stringBSorted = stringB.split("")
+    .sort()
+    .join("");
+  
+    return stringASorted == stringBSorted;
+  }
 // Test Case
 console.log(isAnagram('karet', 'raket')); // True
 console.log(isAnagram('Balok', 'Lobak')); // True
