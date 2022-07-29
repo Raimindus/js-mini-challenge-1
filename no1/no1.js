@@ -1,7 +1,23 @@
 function scoreChecker(score) {
-  // Tulis kodingan dibawah ini
+  if (score >= 90){
   result = 'A';
-  return result;
+  return result;}
+    else if (score >= 80){
+      result='B';
+      return result;
+    }
+    else if (score >= 70){
+      result ='C';
+      return result;
+    }
+    else if (score >= 60){
+      result = 'D';
+      return result;
+    }
+    else {
+      result = 'E';
+      return result;
+    }
 }
 
 console.log(scoreChecker(92)); // Selamat! Anda mendapatkan nilai A.
